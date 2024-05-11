@@ -587,30 +587,7 @@ public:
             amount = total_passengers * amount;
         }
     }
-     void displayInfo(Bus b)
-{
-    cout << "=================================" << endl;
-    cout << "Showing all details......" << endl;
-    cout << "Your CNIC no is: " << b.cnicno << endl;
-    cout << "Your Gender is: " << b.gender << endl;
-    cout << "Your Contact no is: " << b.contactno << endl;
-    if (b.choice == 'b' || b.choice == 'B')
-    {
-        cout << "The departure date is: " << b.departure_date << endl;
-        cout << "The departure time is: " << b.departure_time << endl;
-        cout << "Total no of Passengers are: " << b.total_passengers << endl;
-        cout << "The departure city is: " << b.departure_city[b.option-1] << endl;
-        cout << "The arrival city is: " << b.arrival_city[b.option2-1] << endl;
-        cout << "The arrival date is: " << b.arrival_date << endl;
-    }
-    else
-    {
-        cout << "The departure date is: " << b.departure_date << endl;
-        cout << "The departure time is: " << b.departure_time << endl;
-        cout << "Total no of Passengers are: " << b.total_passengers << endl;
-        cout << "The departure city is: " << b.departure_city[b.option-1] << endl;
-        cout << "The arrival city is: " << b.arrival_city[b.option2-1] << endl;
-    }
+
     cout << "=================================" << endl;
     if (b.departure_time > 6)
     {
