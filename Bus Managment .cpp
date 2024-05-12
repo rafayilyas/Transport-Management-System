@@ -587,7 +587,7 @@ public:
             amount = total_passengers * amount;
         }
     }
-     void displayInfo(Bus b)
+      void displayInfo(Bus b)
 {
     cout << "=================================" << endl;
     cout << "Showing all details......" << endl;

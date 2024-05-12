@@ -44,24 +44,6 @@ public:
         }
     }
 
-    void cancelSeat(int seatNumber)
-    {
-        if (seatNumber < 1 || seatNumber > 47)
-        {
-            cout << "Invalid seat number.\n";
-            return;
-        }
-
-        if (!seats[seatNumber - 1])
-        {
-            cout << "Seat " << seatNumber << " is already available.\n";
-        }
-        else
-        {
-            seats[seatNumber - 1] = false;
-            cout << "Seat " << seatNumber << " cancelled successfully.\n";
-        }
-    }
     string departure_city[100] = {"Lahore", "Rawalpindi", "Multan", "Peshawar", "Karachi", "Faisalabad", "Abbottabad", "Hyderabad", "Gujranwala", "Murree", "Quetta"};
     string arrival_city[100] = {"Lahore", "Rawalpindi", "Multan", "Peshawar", "Karachi", "Faisalabad", "Abbottabad", "Hyderabad", "Gujranwala", "Murree", "Quetta"};
     int amount = 0, option, option2, arrival_time, departure_time, total_passengers, departure_date, arrival_date;
@@ -1353,13 +1335,11 @@ public:
                 cout << "INVALID ENTRY\n";
                 break;
             }
-            cout << "Press any key to return to the main menu or c to cancel the ticket , 'E' to exit: ";
+            cout << "Press any key to return to the main menu  , 'E' to exit: ";
             char continueOption;
             cin >> continueOption;
             if (continueOption == 'E' || continueOption == 'e')
                 exit(0);
-            if (continueOption == 'C' || continueOption == 'c')
-                cancelBooking();
             if (continueOption == 'd' || continueOption == 'D')
                 display();
 
